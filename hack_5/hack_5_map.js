@@ -7,6 +7,9 @@
  */
 let result = [];
 
+[7, 5, 3, 1].map(num => result.push(num));
+
+console.log(result)
 
 //export result
 module.exports = result;

@@ -8,9 +8,20 @@
  * 
  * output => ["b@r","b@z","QUX"]   
  */
-let arr = ["foo","bar","baz","qux","echo"];
-let result = [];
 
+const array = ["foo","bar","baz","qux","echo"];
+const result = array.filter(function(element, index) {
+  return index > 0 && index < 4;
+}).map(function(element) {
+  if (element.includes("a")) {
+    element = element.replace("a", "@");
+  }
+  if (element === "qux") {
+    element = element.toUpperCase();
+  }
+  return element;
+});
+console.log(result);
 
 //export result
 module.exports = result;

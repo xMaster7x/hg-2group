@@ -5,8 +5,17 @@
  * 
  * output => [1,3,5,7]
  */
-let result = [];
+let numeros = [];
 
+for (let i = 1; i <= 8; i+=2) {
+  numeros.push(i);
+}
+
+let result = numeros.map(function(numeros){
+    return numeros;
+});
+
+console.log(result);
 
 //export result
 module.exports = result;

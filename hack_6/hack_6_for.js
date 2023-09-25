@@ -6,9 +6,14 @@
  *
  * output => ["f","o","o","z","i","m","a,"n"]
  */
+
 let str = "fooziman";
 let result = [];
 
+for (i of str){
+    result.push(i)
+}
 
+console.log(result);
 //export result
 module.exports = result;

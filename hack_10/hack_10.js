@@ -12,9 +12,13 @@
  * 
     output => ["bar","qux","octo","foobar"]   
  */
-let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
-let result = [];
 
+const array = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
+const result = [];
+for (let i = 1; i < array.length; i += 2) {
+  result.push(array[i]);
+}
+console.log(result);
 
 //export result
 module.exports = result;

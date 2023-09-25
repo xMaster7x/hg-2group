@@ -7,6 +7,12 @@
  */
 let result = [];
 
+for (let i = 1; i <= 5; i++) {
+    result.push(i);
+  }
+  
+  console.log(result.sort(function(a, b){return b - a}));
+  
 
 //export result
 module.exports = result;
